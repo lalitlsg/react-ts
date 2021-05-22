@@ -1,14 +1,10 @@
 import "./App.css";
-import Parent from "./props/Parent";
-import GuestList from "./state/GuestList";
-import UserSearch from "./state/UserSearch";
+import Events from "./events/Events";
 
 function App() {
   return (
     <div className="App">
-      {/* <Parent /> */}
-      {/* <GuestList /> */}
-      <UserSearch />
+      <Events />
     </div>
   );
 }
