@@ -6,7 +6,7 @@ function App() {
   const [count, setCount] = useState(0);
   const [data, setData] = useState({ empName: "Lalit" });
 
-  // stop re-rendering in case if object does not change
+  // stop re-rendering child in case if object does not change
   const da = useMemo(() => {
     return { empName: data.empName };
   }, [data.empName]);

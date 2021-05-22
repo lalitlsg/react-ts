@@ -23,7 +23,7 @@ const Events: React.FC<{ data: { empName: string } }> = ({ data }) => {
 
 export default React.memo(Events);
 
-// stop re-rendering in case if object does not change
+// stop re-rendering child in case if object does not change
 
 // export default React.memo(Events, (prevProps, nextProps) => {
 //   if (prevProps.data.empName === nextProps.data.empName) {
